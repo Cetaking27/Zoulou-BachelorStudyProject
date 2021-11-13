@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="formulaire.css">
+        <Titlle>
+            Insertion de vidoe et audio> 
+        </Titlle>
+    </head>
+    <body>
+        <audio src="musique.mp3"></audio>
+        <video src="video.mp4"></video>
+        
+        <!--on  peut a cela ajouter la balise controls pour les suivantes option:
+        width - pour modifier la largeur
+        loop - pour jouer la muisique en boucle 
+        autoplay - pour la jopuer des le chargement 
+        preload (auto, metadata, none) - pour indiquer que la musique est prechargee 
+    cette autre balise est uniquement indiquee pour les videos
+        height - modifier la hauteur de la video 
+        poster="..." - pour afficher la premiere page de video -->
+
+        <!--### le design responsive avec les medias
+        cette methode permet a votre sites de s'adapter a n'importe qu'elle type d'ecran
+        nous utilsierons cette technique dans le fichier css : formulaire.css avec les media querries
+        
+        application des medias query
+        1) en chargeant une feuille de style.css differente en fonction de la regle ( <<si la resolution est petite : petite_resolution.css>>)
+         <link rel="stylesheet" href="style.css" />
+         ou encore <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
+    -->
+
+    foemat: <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <link rel="stylesheet" href="style.css" /> <!-- Pour tout le monde -->
+            <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
+            <title>Media queries</title>
+        </head>
+
+    </body>
+    <!--cette dernierre technique permet de modifier la largeur viewport du navigateur mobile avec une balise meta. 
+        on l'insere dans le <head>
+            format 
+        <meta name="viewport" content="width=320" /> ou encore
+    <meta name="viewport" content="width=device-width" /> 
+-->
+</html>

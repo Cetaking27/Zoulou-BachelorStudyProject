@@ -1,0 +1,15 @@
+#conteneur
+{
+   
+    display: flex;
+    flex-direction:column ;
+   justify-content: center;
+   align-items: center;
+   height:350px;
+}
+.element:nth-child(2)
+{
+    align-self: flex-end;
+    flex: 2;
+    order: 1;
+}

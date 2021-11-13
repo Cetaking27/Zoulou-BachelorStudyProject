@@ -1,0 +1,13 @@
+table
+{
+    border: 2px solid rgb(185, 47, 47);
+    border-collapse: collapse;
+}
+tbody
+{
+    caption-side: initial;
+    caption-side: top;
+    border: 2px solid rgb(185, 27, 27);
+    
+    
+}

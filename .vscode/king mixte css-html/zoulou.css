@@ -1,0 +1,55 @@
+/*exercice*/
+h1
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:  50px;
+    color: blue;
+    text-align: center;
+    box-shadow: mediumorchid;
+}
+img
+{
+    width: 500px;
+    height: 500px;
+    font: 1em sans-serif;
+}
+figure
+{
+    text-align: center;
+    image-resolution: center;
+    image-orientation: 10px 15px 20px 25px;
+}
+h2,h3
+{
+    color:green;
+    opacity: 10;
+}
+
+ul
+{
+    background-color: cornflowerblue;
+    font-weight: bold;
+    border: 3px blue groove;
+    border-radius: 20px/15px;
+    font-style: Arial  black;
+    text-shadow:red;
+}
+body
+{
+    background-image:url("fondpage.jpg");
+    fill-opacity:2;
+
+}
+a:hover
+{
+    color:blue;
+}
+p:hover
+{
+    border-right: blueviolet;
+    backface-visibility: inherit; 
+}
+a:focus
+{
+    background-color: lawngreen;
+}

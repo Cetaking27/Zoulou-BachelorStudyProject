@@ -1,0 +1,34 @@
+#topsection
+{
+    display:flex;
+}
+ul
+{
+    list-style-type:square;
+    border: rgb(235, 54, 54) 3px groove;
+}
+p
+{
+    width: 80%;
+    text-align: jutify;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aqua;
+}
+body
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+    border: coral 2px solid;
+}
+a:focus-visible
+{
+    background-color: chartreuse;
+}
+a:hover
+{
+    text-emphasis: none;
+    text-decoration: blue;
+    color: chartreuses;
+}

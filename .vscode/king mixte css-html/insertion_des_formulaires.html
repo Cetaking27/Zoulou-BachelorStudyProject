@@ -1,0 +1,147 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="formulaire.css">
+        <Titlle>
+            Insertion de formulaire 
+        </Titlle>
+    </head>
+    <body>
+        <p>vos coordonnées</p>
+        <form method="post" action="traitement.php">
+            <p><input type="text" name="zoulou"></p>
+        </form>
+        <p>"obligatoire*"</p>
+
+    <!--on peut utiliser aussi un label pour inserer un formulaire-->
+
+    <form method="post" action="traitement.php">
+        <p>
+            <label>animation</label>:<input type="text" name="pseudo">
+        </p>
+    </form> 
+    <!--deuxieme methode avec le label-->
+
+    <form method="post" action="traitement.php">
+        <p>
+            <label  for="pseudo">animation</label>:<input type="text"  name="pseudo" id="pseudo">
+        </p>
+    </form>
+
+    <!--a ceci nous aussi ajouter un nombre important d'attribut 
+    commme : SIZE pour la taille; MAXLENGTH pour limiter le nombre
+     de caractere ; VALUE pour la valeur par defaut; PLACEHOLDER pour 
+     indication de champ-->
+
+     <form method="POST" action="traitement.php">
+         <P>
+             <label for="haba">zoulou:</label>
+             <input type="text" name="haba" id="haba" placeholder="EX: zouolou" size="30" maxlength="10">
+            
+             <!--zone de mot de pass-->
+            
+            <label for="haba">zoulou:</label>
+            <input type="text" name="habe" id="haba">
+            <br/>
+            <label for="pass"> votre mot de passe:</label>
+            <input type="password" name="pass" id="pass">
+
+            <!--zonede multiligne : on peut aussi utiliser la balise cols="" et rows="" pour 
+                indiquer quoi saisir dans les commmentaires-->
+            <p>
+                <label for="commentaire">vous pouvez saisir votre commentaire sur lutilisation de nos services</label><br/>
+                <textarea name="commentaire" id="commentaire"></textarea>
+            </p>
+         </P>
+    </form>
+
+    <!--les element d'option : souvent comme les colonne a cocher-->
+    <form method="POST" action="traitement.php">
+        <p>les elements cocher sur les phrases: <br/>
+            <input type="checkbox" name="frites" id="frites"><label for="frites">frites</label><br/>
+            <input type="checkbox" name="orange" id="orange"><label for="orange">orange</label><br/>
+            <input type="checkbox" name="pomme" id="pomme"><label for="pomme">pomme</label><br/>
+        </p>
+    </form>
+
+    <!--les zones d'option : toujours la meme procedure mais cette fois
+         avec la balises radio pour selectionner une reponse-->
+    <form method="POST" action="traitement.php">
+        <p>
+            votre age:<br/>
+            <input type="radio" name="age" value="moins15" id="moins15"><label for="moins15">Moins de 15</label><br/>
+            <input type="radio" name="age" value="medium15-20" id="medium15-20"><label for="medium15-20">15-20 ans</label><br/>
+            <input type="radio" name="age" value="plus20" id="plus20"><label for="plus20">plus de 20</label><br/>
+        </p>
+    </form>
+
+    <!--les lites deroulantes: pour cette balise on
+     peut aussi indiquer les option choisi par defaut avec la balise selected
+     exemple: option value="canada" selected -->
+
+    <form method="post" action="traitement.php">
+        <p>
+            <label for="pays">Dans quel pays habitez-vous ?</label><br />
+            <select name="pays" id="pays">
+                <option value="france">France</option>
+                <option value="espagne">Espagne</option>
+                <option value="italie">Italie</option>
+                <option value="royaume-uni">Royaume-Uni</option>
+                <option value="canada">Canada</option>
+                <option value="etats-unis">États-Unis</option>
+                <option value="chine">Chine</option>
+                <option value="japon">Japon</option>
+            </select>
+        </p>
+     </form>
+
+     <!-- regroupememnt de champ: ceci se fait avec la balise legend que l'on insere dans la balise fieldset -->
+
+     <form method="post" action="traitement.php">
+ 
+        <fieldset>
+            <legend>Vos coordonnées</legend> <!-- Titre du fieldset --> 
+     
+            <label for="nom">Quel est votre nom ?<br/></label>
+            <input type="text" name="nom" id="nom" /><br/>
+     
+            <label for="prenom">Quel est votre prénom ?<br/></label>
+            <input type="text" name="prenom" id="prenom" /><br/>
+      
+            <label for="email">Quel est votre e-mail ?<br/></label>
+            <input type="email" name="email" id="email" />
+     
+        </fieldset>
+      
+        <fieldset>
+            <legend>Votre souhait</legend> <!-- Titre du fieldset -->
+      
+            <p>
+                Faites un souhait que vous voudriez voir exaucé :<br/>
+     
+                <input type="radio" name="souhait" value="riche" id="riche" /> <label for="riche">Etre riche</label><br/>
+                <input type="radio" name="souhait" value="celebre" id="celebre" /> <label for="celebre">Etre célèbre</label><br/>
+                <input type="radio" name="souhait" value="intelligent" id="intelligent" /> <label for="intelligent">Etre <strong>encore</strong> plus intelligent</label><br/>
+                <input type="radio" name="souhait" value="autre" id="autre" /> <label for="autre">Autre...</label><br/>
+            </p>
+      
+            <p>
+                <label for="precisions">Si "Autre", veuillez préciser :<br/></label>
+                <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+            </p>
+        </fieldset>
+     </form>
+     <!--on peut tout de meme uitliser les balises autofocus et required pour selectioner automatiquement  et  rendre obligatoire 
+    il suffi juste d'utliser la formule  suivante : <input type="text" name="prenom" id="prenom" autofocus>
+    ou encore <input type="text" name="prenom" id="prenom" required> 
+    cette meme balise est aussi disponible en css :required
+                {
+                    background-color: red;
+                }
+     -->
+
+    </body>
+</html>
+        <!--les autres balises aussi necessaire dans l'utilisation de formulaire
+        input type="email", type="url", type="tel", type="number", type="range", type="color", type="date", type="serch"-->

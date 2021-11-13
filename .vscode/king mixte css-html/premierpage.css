@@ -1,0 +1,58 @@
+header
+{
+    font-style: normal;
+    color:rgb(128, 31, 238);
+    text-align: center;
+    text-shadow:5px 5px 3px rgb(83, 69, 100);
+    text-transform:lowercase;
+}
+h1,h2
+{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(110, 212, 216);
+    min-width: 50%;
+    border: grey 3px solid;
+    border-radius: 25px/25px;
+   
+body
+{
+    background-color: rgb(122, 154, 202);
+    background-position: bottom;
+    opacity: 1;
+    background-attachment: fixed;
+   
+}
+}
+a:hover
+{
+    color: goldenrod;
+}
+p
+{
+    border: 1px solid black;
+
+    width: 250%;
+    text-align: justify;
+    padding: 10px;
+    margin: auto;
+
+}
+/*utilisation dees flex boxx*/
+#conteneur
+{
+    display:flex;
+    flex-direction:column;
+}
+#contenu
+{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap-reverse;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    color: blueviolet;
+    background-color:rgb(69, 146, 151) ;
+    text-shadow: rgb(35, 49, 173);
+}
