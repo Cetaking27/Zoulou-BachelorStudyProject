@@ -1,6 +1,5 @@
 {
     "python.pythonPath": "C:\\Python\\Python39\\python.exe",
     "git.autofetch": true,
-    "typescript.disableAutomaticTypeAcquisition": true,
-    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+    "typescript.disableAutomaticTypeAcquisition": true
 }
